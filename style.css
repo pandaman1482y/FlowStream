@@ -1,77 +1,71 @@
-* {
+body {
+  background-color: #000;
+  color: #00ff99;
+  font-family: "Helvetica Neue", sans-serif;
+  text-align: center;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #0d0d0d;
-  color: #00ff88;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
-  padding: 40px 20px;
 }
 
 .container {
-  max-width: 500px;
-  margin: 0 auto;
+  padding: 40px 20px;
 }
 
 .app-icon {
-  width: 160px;
-  height: 160px;
-  border-radius: 32px;
-  box-shadow: 0 0 30px #00ff88;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #00ff99;
   margin-bottom: 20px;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.5em;
   margin-bottom: 10px;
-  font-weight: bold;
-}
-
-p {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
 }
 
 .button {
-  background: #00ff88;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #00ff99;
   color: #000;
   text-decoration: none;
-  padding: 12px 24px;
   border-radius: 30px;
   font-weight: bold;
-  transition: background 0.3s;
+  margin-top: 10px;
 }
 
-.button:hover {
-  background: #00cc70;
-}
 .affiliate-links {
   margin-top: 20px;
 }
 
 .affiliate-links a {
-  color: #1db954;
+  color: #66ccff;
   text-decoration: none;
   font-weight: bold;
 }
 
+.affiliate-links a:hover {
+  text-decoration: underline;
+}
+
 .roadmap {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .roadmap h2 {
-  font-size: 1.4em;
+  font-size: 1.6em;
   margin-bottom: 10px;
 }
 
 .roadmap ul {
+  list-style: disc;
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
   padding-left: 20px;
 }
 
 .roadmap li {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
