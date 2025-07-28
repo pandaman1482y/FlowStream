@@ -49,3 +49,29 @@ p {
 .button:hover {
   background: #00cc70;
 }
+.affiliate-links {
+  margin-top: 20px;
+}
+
+.affiliate-links a {
+  color: #1db954;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.roadmap {
+  margin-top: 40px;
+}
+
+.roadmap h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.roadmap ul {
+  padding-left: 20px;
+}
+
+.roadmap li {
+  margin-bottom: 6px;
+}
