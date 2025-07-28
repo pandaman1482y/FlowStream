@@ -1,10 +1,9 @@
 body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
   background-color: #000;
   color: #00ff99;
-  font-family: "Helvetica Neue", sans-serif;
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
 
 .container {
@@ -15,13 +14,19 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 20px;
-  box-shadow: 0 0 30px #00ff99;
   margin-bottom: 20px;
+  box-shadow: 0 0 30px #00ff99;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3em;
+  color: #00ff99;
   margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
 }
 
 .button {
@@ -30,42 +35,59 @@ h1 {
   background-color: #00ff99;
   color: #000;
   text-decoration: none;
-  border-radius: 30px;
   font-weight: bold;
-  margin-top: 10px;
+  border-radius: 999px;
+  box-shadow: 0 4px 10px rgba(0, 255, 153, 0.3);
+  margin-bottom: 20px;
+  transition: all 0.3s;
 }
 
-.affiliate-links {
-  margin-top: 20px;
+.button:hover {
+  background-color: #00cc77;
 }
 
-.affiliate-links a {
+/* 横並びリンク */
+.affiliate-links.horizontal {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0;
+}
+
+.affiliate-links.horizontal a {
   color: #66ccff;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1em;
 }
 
-.affiliate-links a:hover {
+.affiliate-links.horizontal a:hover {
   text-decoration: underline;
 }
 
-.roadmap {
-  margin-top: 50px;
+/* 今後の方針 */
+.roadmap.center {
+  margin-top: 40px;
 }
 
-.roadmap h2 {
-  font-size: 1.6em;
+.roadmap.center h2 {
+  font-size: 1.8em;
+  color: #00ff99;
+  margin-bottom: 20px;
+}
+
+.roadmap.center ul {
+  list-style: none;
+  padding: 0;
+}
+
+.roadmap.center li {
+  font-size: 1.1em;
   margin-bottom: 10px;
+  color: #00ff99;
 }
 
-.roadmap ul {
-  list-style: disc;
-  text-align: left;
-  max-width: 400px;
-  margin: 0 auto;
-  padding-left: 20px;
-}
-
-.roadmap li {
-  margin-bottom: 8px;
+.roadmap.center li::before {
+  content: "• ";
+  color: #00ff99;
 }
